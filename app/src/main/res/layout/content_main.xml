@@ -16,9 +16,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="317dp"
+        android:layout_marginBottom="9dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,30 +26,31 @@
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:text="                Android"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_height="match_parent"
+            android:text="          Android"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="@android:color/black"
-            android:textStyle="bold" />
+            android:textStyle="normal|bold" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="216dp"
-        android:layout_height="85dp"
+        android:layout_width="196dp"
+        android:layout_height="57dp"
         android:layout_marginStart="98dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="9dp"
         android:layout_marginEnd="97dp"
         android:text="Toppings"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@android:color/black"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <CheckBox
-        android:id="@+id/checkBox1"
+        android:id="@+id/cb_cream"
         android:layout_width="187dp"
         android:layout_height="49dp"
         android:layout_marginStart="108dp"
@@ -61,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cb_choco"
         android:layout_width="152dp"
         android:layout_height="42dp"
         android:layout_marginStart="109dp"
@@ -70,7 +71,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_cream" />
 
     <TextView
         android:id="@+id/textView7"
@@ -85,18 +86,18 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_choco" />
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="403dp"
+        android:layout_width="324dp"
         android:layout_height="67dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="43dp"
         android:layout_marginBottom="12dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
@@ -155,9 +156,9 @@
     <LinearLayout
         android:id="@+id/linearLayout8"
         android:layout_width="395dp"
-        android:layout_height="65dp"
+        android:layout_height="51dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="8dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,7 +173,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/btn_oeder"
+            android:id="@+id/btn_order"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -187,8 +188,8 @@
 
     <Button
         android:id="@+id/btn_reset"
-        android:layout_width="108dp"
-        android:layout_height="56dp"
+        android:layout_width="106dp"
+        android:layout_height="40dp"
         android:layout_marginStart="84dp"
         android:layout_marginEnd="10dp"
         android:text="Reset"
@@ -199,11 +200,13 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="132dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="76dp"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="104dp"
         android:text="_"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_reset"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
 
 </android.support.constraint.ConstraintLayout>
